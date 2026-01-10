@@ -1,0 +1,39 @@
+{
+  "name": "San-Music",
+  "description": "Very simple discord music bot with the discord.js with Song Name playing. It can able to play music with the song name",
+  "repository": "https://github.com/shubhamos-ai/san-music",
+  "logo": "https://instagram.fbdq2-1.fna.fbcdn.net/v/t51.2885-19/485103260_673387935155708_8505290271947764750_n.jpg?_nc_ht=instagram.fbdq2-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QErFLhIO3eaUyKFLKiP7gHt9-0-tbPZgS591hlG828zgABsOB3EOSx8xGMCpOBlH3s&_nc_ohc=n71GP-Kw1ikQ7kNvgGPgcFg&_nc_gid=6Q2qfg4oGKOOWGCOlC0lmw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYFwASJqYLxB8lkzTNKIOeOllgDWn6W0gT621ohjCmDg5g&oe=67EF1600&_nc_sid=7a9f4b",
+  "keywords": [
+    "node",
+    "discord",
+    "youtube",
+    "music",
+    "bot",
+    "lavalink",
+    "dashboard"
+  ],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "token": {
+      "description": "The Discord Bot Token (https://discord.com/developers/applications)",
+      "required": "true"
+    },
+    "clientId": {
+      "description": "The Discord Bot ClientID",
+      "required": "true"
+    },
+    "clientSecret": {
+      "description": "The Discord Bot ClientSecret",
+      "required": "true"
+    },
+    "website": {
+      "description": "URL of your webserver (Example: https://domain.xyz). Change this if you want to use the web-dashboard.",
+      "value": "http://localhost"
+    }
+  }
+}
